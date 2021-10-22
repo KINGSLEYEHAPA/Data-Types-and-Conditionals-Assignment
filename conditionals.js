@@ -456,6 +456,141 @@ else {
   console.log("N/A")
 }
 
+
+// 7. From the smallest of creatures to the largest of animals, inevitably every living, breathing thing must ingest other organisms to survive. This means that all animals will fall within one of the three consumer-based categories based on the types of food that they eat.
+// Animals that eat only plants are called herbivores
+// Animals that eat only other animals are called carnivores
+// Animals that eat both plants and animals are called omnivores
+ 
+// Directions:
+// Write a series of ternary statements that sets the variable category equal to:
+// "herbivore" if an animal eats plants
+// "carnivore" if an animal eats animals
+// "omnivore" if an animal eats plants and animals
+// "undefined" if an animal doesn't eat plants or animals
+// Use the eatsPlants and eatsAnimals variables to test your code.
+// TIP: Make sure to test your code with different values. For example,
+// If eatsPlants equals true and eatsAnimals equals false, then herbivore should be printed to the console.
+/*
+ * Programming Quiz - Navigating the Food Chain
+ *
+ * Use a series of ternary operator to set the category to one of the following:
+ *   - "herbivore" if an animal eats plants
+ *   - "carnivore" if an animal eats animals
+ *   - "omnivore" if an animal eats plants and animals
+ *   - undefined if an animal doesn't eat plants or animals
+ *
+ * Notes
+ *   - use the variables `eatsPlants` and `eatsAnimals` in your ternary expressions
+ *   - `if` statements aren't allowed ;-)
+ */
+ 
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have the variables `eatsPlants`, `eatsAnimals`
+ * - Your code should include ternary statements. Do not use if....else statement. 
+ * - Your code should produce the expected output
+ * - Your code should not be empty
+ * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.
+ */
+ 
+// change the values of `eatsPlants` and `eatsAnimals` to test your code
+var eatsPlants = false;
+var eatsAnimals = true;
+ 
+/*
+ * Test your code agaist the followig possible input/output combinations of (`eatsPlants`, `eatsAnimals`, expected output):
+ * - (true, true, omnivore)
+ * - (false, true, carnivore)
+ * - (true, false, herbivore)
+ * - (false, false, undefined)
+ */
+let category = eatsPlants&&eatsAnimals? "omnivore": !eatsPlants&& eatsAnimals? "carnivore":eatsPlants&& !eatsAnimals? "herbivore":"Undefined";
+console.log(category);
+
+
+// 8. In 2015, the U.S. Bureau of Labor Statistics conducted research to reveal how average salary is directly related to the number of years spent in school. In their findings, they found that people with:
+// no high school diploma earned an average of $25,636/year,
+// a high school diploma earned an average of $35,256/year,
+// an Associate's degree earned an average of $41,496/year,
+// a Bachelor's degree earned an average of $59,124/year,
+// a Master's degree earned an average of $69,732/year,
+// a Professional degree earned an average of $89,960/year,
+// and a Doctoral degree earned an average of $84,396/year.
+// Directions:
+// Write a switch statement to set the average salary of a person based on their type of completed education.
+// Afterwards, print the following to the console.
+// In 2015, a person with __________ earned an average of __________/year.
+// Fill in the blanks with the type of education and the expected average salary. Make sure to use correct grammar in your printed statement, and watch out for any extra or missing characters (including spaces and punctuation marks). For help, refer to the findings above.
+// In 2015, a person with a Bachelor's degree earned an average of $59,124/year.
+// TIP: To print out the average salary with commas (i.e. 59,124), use the toLocaleString() method and pass it the locale "en-US". For example, salary.toLocaleString("en-US").
+
+// TIP: Make sure to test your code with different values. For example,
+// If education equals "an Associate's degree", then the string"In 2015, a person with an Associate's degree earned an average of $41,496/year." should be printed to the console.
+/*
+ * Programming Quiz: Back to School 
+ *
+ * Write a switch statement to set the average salary of a person based on their type of completed education.
+ *
+ */
+ 
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have the variables `education`, and `salary`
+ * - Your code should include a switch statement
+ * - Your code should produce the expected output
+ * - Your code should not be empty
+ * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.
+ */
+ 
+// change the value of `education` to test your code
+var education =  "a Bachelor's degree";
+ 
+// set the value of this based on a person's education
+let salary = 0;
+ 
+// your code goes here
+
+switch(education) {
+  case "no high school diploma":
+  salary= 25636;
+  salary= salary.toLocaleString("en-US");
+  console.log(`In 2015, a person with ${education} earned an average of \$${salary}/year.`)
+  break;
+    case "a high school diploma":
+  salary= 35256;
+  salary= salary.toLocaleString("en-US");
+  console.log(`In 2015, a person with ${education} earned an average of \$${salary}/year.`)
+  break;
+    case "an Associate's degree":
+  salary= 41496;
+  salary= salary.toLocaleString("en-US");
+  console.log(`In 2015, a person with ${education} earned an average of \$${salary}/year.`)
+  break;
+    case "a Bachelor's degree":
+  salary= 59124;
+  salary= salary.toLocaleString("en-US");
+  console.log(`In 2015, a person with ${education} earned an average of \$${salary}/year.`)
+  break;
+    case "a Master's degree":
+  salary= 69732;
+  salary= salary.toLocaleString("en-US");
+  console.log(`In 2015, a person with ${education} earned an average of \$${salary}/year.`)
+  break;
+    case "a Professional degree":
+  salary= 89960;
+  salary= salary.toLocaleString("en-US");
+  console.log(`In 2015, a person with ${education} earned an average of \$${salary}/year.`)
+  break;
+    case "a Doctoral degree":
+  salary= 84396;
+  salary= salary.toLocaleString("en-US");
+  console.log(`In 2015, a person with ${education} earned an average of \$${salary}/year.`)
+  break;
+
+}
+
+
  
 
 
